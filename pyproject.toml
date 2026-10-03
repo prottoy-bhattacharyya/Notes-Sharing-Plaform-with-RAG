@@ -1,0 +1,26 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Prottoy Vhattacharyya", email = "prottoybhattacharya@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "faiss-cpu>=1.15.1",
+    "langchain>=1.4.3",
+    "langchain-community>=0.4.2",
+    "langchain-huggingface>=1.2.2",
+    "ollama>=0.6.3",
+    "pypdf2>=3.0.1",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+code = "code:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
